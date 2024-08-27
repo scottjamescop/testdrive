@@ -141,10 +141,17 @@ function test_drive_scripts() {
 	wp_enqueue_style( 'test-drive-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'test-drive-style', 'rtl', 'replace' );
 
+	wp_enqueue_style( 'test-drive-global', get_template_directory_uri() . '/css/global.css', array(), _S_VERSION );
+	
 	wp_enqueue_script( 'test-drive-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+
+	if(is_singular('datasheet')){
+		wp_enqueue_style( 'test-drive-datasheet-styles', get_template_directory_uri() . '/css/datasheet.css', array(), _S_VERSION );
+		wp_enqueue_script( 'test-drive-modal', get_template_directory_uri() . '/js/modal.js', array(), _S_VERSION, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'test_drive_scripts' );

@@ -58,4 +58,4 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-	<div class="container">
+	<main>

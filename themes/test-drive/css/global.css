@@ -1,0 +1,30 @@
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.site-header p{
+    margin: 0;
+}
+
+.site-header .main-navigation{
+    width: auto;
+}
+
+.site-footer{
+    display: flex;
+    justify-content: center;
+
+    background: black;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.site-footer a{
+    color: white;
+}
