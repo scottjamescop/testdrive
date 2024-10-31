@@ -190,3 +190,11 @@ function create_custom_post_type() {
 	);
 }
 add_action( 'init', 'create_custom_post_type' );
+
+function enqueue_modal_assets() {
+    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), null, true);
+
+	wp_enqueue_style('custom-css', get_template_directory_uri(). '/css/style.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_modal_assets');

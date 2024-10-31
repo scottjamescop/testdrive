@@ -1,0 +1,39 @@
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+}
+.hero-section .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 3-Up Text Elements Section */
+.three-up-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+.three-up-section .text-element {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+.cta-section .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
