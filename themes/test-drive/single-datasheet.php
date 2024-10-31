@@ -17,12 +17,10 @@ while (have_posts()) :
         <h1><?php echo esc_html($hero_title); ?></h1>
         <p><?php echo wp_kses_post($hero_content); ?></p>
     </div>
-</section>
 
-<section class="cta-section">
-    <div class="container text-center">
+    <div class="cta-button container text-center">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#datasheetModal">
-            View More Information
+            Open Data
         </button>
     </div>
 </section>
